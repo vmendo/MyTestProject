@@ -1,0 +1,14 @@
+node {
+    stage("Crate File"){
+        sh 'touch Myfile.txt'
+    }
+    
+    stage("Write") {
+        sh 'echo "Hi there" > Myfile.txt'
+    }
+    
+    stage("Print") {
+        sh 'cat Myfile.txt'
+    }
+
+}
